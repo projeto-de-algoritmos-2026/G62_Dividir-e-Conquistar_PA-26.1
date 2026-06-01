@@ -60,21 +60,21 @@ class Cli:
 
     def show_menu_and_query_commands(self) -> CliCommand:
         print("Opções atuais:")
-        print("=========================")
+        print("========================================")
         print(f"Lista atual: {self.current_list}")
         print(f"Contagem de inversões: {'ON' if self.show_count else 'OFF'}")
         print(f"Índice de Spearman: {'ON' if self.show_spearman else 'OFF'}")
         print(f"Índice Tau de Kendall: {'ON' if self.show_tau else 'OFF'}")
-        print("=========================")
+        print("========================================")
         print("Selecione uma ação:")
-        print("=========================")
+        print("========================================")
         print("1. Definir nova lista")
         print("2. Alternar exibição da contagem de inversões")
         print("3. Alternar exibição do índice de Spearman")
         print("4. Alternar exibição do índice Tau de Kendall")
         print("5. Computar e mostrar resultados")
         print("0. Sair")
-        print("=========================")
+        print("========================================")
         return CliCommand(int(input("Digite o número da ação desejada: ")))
 
     def main(self):
@@ -104,7 +104,9 @@ class Cli:
                             inv_num, len(self.current_list)
                         )
                         print(f"Índice Tau de Kendall: {tau:.4f}")
+                    print("========================================")
                     print(f"Lista ordenada: {sorted_list}")
+                    print("========================================")
                 except Exception as e:
                     print(
                         f"Erro ao computar resultados: {str(e)}. Verifique se a lista atual é válida e tente novamente."
