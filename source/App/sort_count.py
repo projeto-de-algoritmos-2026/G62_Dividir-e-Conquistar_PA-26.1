@@ -28,7 +28,7 @@ class SortCount:
     def run(items) -> tuple[int, list[Any]]:
         items_len = len(items)
         if items_len <= 1:
-            return (0, list[Any]())
+            return (0, list(items))
 
         middle_idx = items_len >> 1
 

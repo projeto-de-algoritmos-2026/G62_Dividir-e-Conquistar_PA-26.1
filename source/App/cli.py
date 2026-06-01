@@ -97,9 +97,7 @@ class Cli:
                     if self.show_count:
                         print(f"Contagem de inversões: {inv_num}")
                     if self.show_spearman:
-                        rs = scu.SortCountUtil.spearman_2(
-                            inv_num, len(self.current_list)
-                        )
+                        rs = scu.SortCountUtil.spearman(self.current_list)
                         print(f"Índice de Spearman: {rs:.4f}")
                     if self.show_tau:
                         tau = scu.SortCountUtil.kendall_tau_2(
