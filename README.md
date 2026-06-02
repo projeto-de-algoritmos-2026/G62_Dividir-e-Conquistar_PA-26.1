@@ -33,6 +33,7 @@ O projeto depende basicamente de recursos da própria linguagem Python. É recom
 A aplicação é portátil, e pode ser rodada a partir dos próprios scripts já aqui neste repositório. Para executar, simplesmente execute um dos seguintes 2 comandos a partir da pasta `source`:<br>
 * `py -m App.main`
 * `py App/main.py`
+
 Ao abrir o *script* `main`, será exibido um menu no *console* conforme a
 **Captura de Tela 1**. Digite o número de uma ação a se executar, e pressione a
 tecla Enter. Então siga as instruções na tela quando exigido, como a digitação
